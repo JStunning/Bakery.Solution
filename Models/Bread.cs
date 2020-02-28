@@ -19,24 +19,26 @@ namespace BreadBin.Models
         Price = 5;
         Loaves = 0;
         Type = "No Type";
+        IsDeal = false;
       }
 
-      public void SetLoafs(int loaves)
+      public void SetLoaves(int loaves)
       { 
         Loaves = loaves;
-        isDeal();
+        SalePrice();
       }
 
       public void SalePrice()
       {
         if(Loaves % 2 == 0)
         {
-          Console.WriteLine("is Deal!");
           Price = 5 * (Loaves / 2);
+          IsDeal = true;
         }
         else 
         {
-          Price *= Loaves;          
+          Price *= Loaves;    
+          IsDeal = false;
         }
       }
 
