@@ -12,7 +12,7 @@ namespace PastryBin.Models
 
       public Pastry()
       {
-        Price = 0;
+        Price = 2;
         Goods = 0;
         Type = "No Type";
         IsDeal = false;
@@ -26,9 +26,9 @@ namespace PastryBin.Models
 
       public void SalePrice()
       {
-        if(Goods % 2 == 0)
+        if(Goods % 3 == 0)
         {
-          Price = 5 * (Goods / 2);
+          Price = 5 * (Goods / 3);
           IsDeal = true;
         }
         else 

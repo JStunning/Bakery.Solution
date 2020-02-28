@@ -6,8 +6,16 @@ using PastryBin.Models;
 public class Program
 {
 
+  public static class Order
+  {
+
+
+  }
+
+  //Static Variable Classes
   public static Bread myBread;
   public static Pastry myPastry;
+
   public static void Main()
   {
 
@@ -35,7 +43,8 @@ public class Program
       Console.WriteLine("White, Wheat, French, etc...");
       string BreadType = Console.ReadLine();
       myBread.SetType(BreadType);
-      Console.WriteLine("How many loaves you want? <enter a number>");
+      Console.WriteLine("How many loaves you want, they are $5 each. <enter a number>");
+      Console.WriteLine("If you buy 2 you get one for free!");
       int BreadNum = int.Parse(Console.ReadLine());
       myBread.SetLoaves(BreadNum);
       if(myBread.IsDeal == true){
@@ -54,7 +63,8 @@ public class Program
       Console.WriteLine("Muffin, Donut, Turnover, Bearclaw, etc...");
       string PastryType = Console.ReadLine();
       myPastry.SetType(PastryType);
-      Console.WriteLine($"How many {myPastry.Type}s you want? <enter a number>");
+      Console.WriteLine($"How many {myPastry.Type}s you want, they are $2 each. <enter a number>");
+      Console.WriteLine("If you buy 3 you get a dollar off!");
       int PastryNum = int.Parse(Console.ReadLine());
       myPastry.SetGoods(PastryNum);
       if(myPastry.IsDeal == true){
@@ -77,7 +87,7 @@ public class Program
       }
       else 
       {
-        Console.WriteLine($"{myBread.Loaves} loaves of {myBread.Type},");
+        Console.WriteLine($"{myBread.Loaves} loaves of {myBread.Type} bread,");
         Console.WriteLine($"${myBread.Price}, please.");
       }
     }
@@ -91,7 +101,7 @@ public class Program
       }
       else 
       {
-        Console.WriteLine($"One {myPastry.Type},");
+        Console.WriteLine($"{myPastry.Goods} {myPastry.Type}s,");
         Console.WriteLine($"${myPastry.Price}, please.");
       }
     }
