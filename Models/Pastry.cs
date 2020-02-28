@@ -7,11 +7,13 @@ namespace PastryBin.Models
     {
       public int Price { get; set; }
       public int Goods { get; set; }
+      public string Type { get; set; }
 
       public Pastry()
       {
         Price = 0;
         Goods = 0;
+        Type = "No Type";
       }
 
       public void SetGoods(int goods)
@@ -25,12 +27,17 @@ namespace PastryBin.Models
         if(Goods % 3 == 0)
         {
           Console.WriteLine("What a deal!");
-          Price = 5;
+          Price = 5 * (Goods / 3);
         }
         else 
         {
           Price *= Goods;          
         }
+      }
+
+      public void SetType(string type)
+      {
+        Type = type;
       }
     }
 }

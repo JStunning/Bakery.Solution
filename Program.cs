@@ -18,17 +18,32 @@ public class Program
     int userInput = int.Parse(Console.ReadLine());
     if(userInput == 1)
     {
+      Console.WriteLine("What kind of bread do you want?");
+      Console.WriteLine("White, Wheat, French Bread, etc...");
+      string BreadType = Console.ReadLine();
+      myBread.SetType(BreadType);
       Console.WriteLine("How many loaves you want?");
       int BreadNum = int.Parse(Console.ReadLine());
       myBread.SetLoafs(BreadNum);
-      Console.WriteLine(myBread.Price);
+      Console.WriteLine($"{myBread.Loaves} loaves of {myBread.Type} bread");
+      Console.WriteLine($"${myBread.Price}, please.");
     }
     else 
     {
-      Console.WriteLine("How many goods you want?");
-      int PastryNum = int.Parse(Console.ReadLine());
-      myPastry.SetGoods(PastryNum);
-      Console.WriteLine(myPastry.Price);
+      Console.WriteLine("What kind of pastry do you want?");
+      Console.WriteLine("Muffin, Donut, Turnover, Bearclaw, etc...");
+      string PastryType = Console.ReadLine();
+      myPastry.SetType(PastryType);
+      Console.WriteLine($"How many {myPastry.Type}s you want?");
+      var PastryNum = Console.ReadLine();
+      Console.WriteLine(PastryNum.GetType());
+      // if(PastryNum.GetType() == System.Int)
+      // {
+          //myPastry.SetGoods(PastryNum);
+      // }
+      //myPastry.SetGoods(PastryNum);
+      Console.WriteLine($"{myPastry.Goods} {myPastry.Type}s");
+      Console.WriteLine($"${myPastry.Price}, please.");
     }
 
   }
