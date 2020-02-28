@@ -17,7 +17,7 @@ namespace PastryBin.Models
       }
 
       public void SetGoods(int goods)
-      { 
+      {
         Goods = goods;
         isDeal();
       }
