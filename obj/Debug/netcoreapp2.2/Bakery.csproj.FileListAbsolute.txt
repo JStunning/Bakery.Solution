@@ -1,0 +1,11 @@
+C:\Users\Stunning\Desktop\epicodusProjects\c#\bakery-project\bin\Debug\netcoreapp2.2\Bakery.deps.json
+C:\Users\Stunning\Desktop\epicodusProjects\c#\bakery-project\bin\Debug\netcoreapp2.2\Bakery.runtimeconfig.json
+C:\Users\Stunning\Desktop\epicodusProjects\c#\bakery-project\bin\Debug\netcoreapp2.2\Bakery.runtimeconfig.dev.json
+C:\Users\Stunning\Desktop\epicodusProjects\c#\bakery-project\bin\Debug\netcoreapp2.2\Bakery.dll
+C:\Users\Stunning\Desktop\epicodusProjects\c#\bakery-project\bin\Debug\netcoreapp2.2\Bakery.pdb
+C:\Users\Stunning\Desktop\epicodusProjects\c#\bakery-project\obj\Debug\netcoreapp2.2\Bakery.csprojAssemblyReference.cache
+C:\Users\Stunning\Desktop\epicodusProjects\c#\bakery-project\obj\Debug\netcoreapp2.2\Bakery.csproj.CoreCompileInputs.cache
+C:\Users\Stunning\Desktop\epicodusProjects\c#\bakery-project\obj\Debug\netcoreapp2.2\Bakery.AssemblyInfoInputs.cache
+C:\Users\Stunning\Desktop\epicodusProjects\c#\bakery-project\obj\Debug\netcoreapp2.2\Bakery.AssemblyInfo.cs
+C:\Users\Stunning\Desktop\epicodusProjects\c#\bakery-project\obj\Debug\netcoreapp2.2\Bakery.dll
+C:\Users\Stunning\Desktop\epicodusProjects\c#\bakery-project\obj\Debug\netcoreapp2.2\Bakery.pdb
