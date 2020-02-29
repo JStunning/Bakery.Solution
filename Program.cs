@@ -30,10 +30,12 @@ public class Program
     if(userInput == 1)
     {
       BreadPath();
+      Console.WriteLine("Thanks for your purchase!");
     }
     else 
     {
       PastryPath();
+      Console.WriteLine("Thanks for your purchase!");
     }
 
     //Functions
